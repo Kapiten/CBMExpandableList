@@ -15,6 +15,47 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter JSON text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tvELErrorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/s4dp"
+            android:visibility="gone"
+            android:textColor="#FFA00000"
+            tools:text="Error Title"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <TextView
+            android:id="@+id/tvELErrorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s4dp"
+            android:padding="@dimen/s4dp"
+            android:visibility="gone"
+            android:textColor="#FFA00000"
+            tools:text="Error Details"
+            /></ScrollView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s4dp"
+        android:text="SetJSONfromET"/>
 
     <com.cbm.andy.cbmexpandablelist.Items
         android:id="@+id/items"
